@@ -4,12 +4,13 @@ import 'dart:ui';
 import 'package:colored_t_rex/game/collision/collision_box.dart';
 import 'package:colored_t_rex/game/custom/util.dart';
 import 'package:colored_t_rex/game/game.dart';
+import 'package:colored_t_rex/game/horizon/config.dart';
 import 'package:colored_t_rex/game/obstacle/config.dart';
 import 'package:colored_t_rex/game/obstacle/obstacle_type.dart';
 import 'package:flame/components.dart';
 
 class ObstacleManager extends PositionComponent with HasGameRef<TRexGame> {
-  ObstacleManager(this.dimesntions);
+  ObstacleManager(this.dimensions);
 
   ListQueue<ObstacleType> history = ListQueue();
   final HorizonDimensions dimensions;
